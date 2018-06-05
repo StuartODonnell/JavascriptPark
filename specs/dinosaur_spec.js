@@ -1,19 +1,19 @@
 const assert = require('assert');
 const Dinosaur = require('../dinosaur.js');
-const Park = require('../park.js');
+// const Park = require('../park.js');
 
-describe('dinosaur', function(){
+describe('Dinosaur', function(){
 
 let dinosaur;
-let park;
+// let park;
 
 beforeEach(function(){
-  dinosaur = new Dinosaur();
-  bottle = new Park();
+  dinosaur = new Dinosaur("Tyrannosaurus", 3);
+  // bottle = new Park();
 })
 
-it('dinosaur should have a name', function(){
+it('dinosaur should have a type', function(){
   assert.strictEqual(dinosaur.type, "Tyrannosaurus")
-})
-  
-})
+});
+
+});
