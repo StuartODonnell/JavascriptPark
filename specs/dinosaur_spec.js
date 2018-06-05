@@ -8,12 +8,17 @@ let dinosaur;
 // let park;
 
 beforeEach(function(){
-  dinosaur = new Dinosaur("Tyrannosaurus", 3);
-  // bottle = new Park();
+  dinosaur1 = new Dinosaur("Velociraptor", 1);
+  dinosaur3 = new Dinosaur("Tyrannosaurus", 3);
+
+  // park = new Park();
 })
 
 it('dinosaur should have a type', function(){
-  assert.strictEqual(dinosaur.type, "Tyrannosaurus")
+  assert.strictEqual(dinosaur3.type, "Tyrannosaurus")
 });
 
+it('dinosaur has a number of offspring', function(){
+  assert.strictEqual(dinosaur1.numberOfOffspring, 1)
+})
 });
