@@ -1,10 +1,10 @@
 const assert = require('assert');
 const Park = require('../park.js');
-const Dinosaur = require('../dinosaur.js');
+const Dinosaur = require('../dinosaur.js'); //not required
 
 describe('park', function(){
 let park;
-let dinosaur;
+let dinosaur; //not required
 
 beforeEach(function(){
   park = new Park();
