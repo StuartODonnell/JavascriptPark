@@ -23,4 +23,16 @@ it('add dinosaur to enclosure', function(){
   assert.strictEqual(park.enclosure.length, 1);
 });
 
+it('removes dinosaur by type', function(){
+  park.addDinoToEnclosure(dinosaur1);
+  park.addDinoToEnclosure(dinosaur1);
+  park.addDinoToEnclosure(dinosaur3);
+  park.addDinoToEnclosure(dinosaur3);
+  park.removeDinoByName("Tyrannosaurus");
+  assert.strictEqual(park.enclosure.length, 2);
+
+
+})
+
+
 });
