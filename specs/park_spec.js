@@ -34,5 +34,14 @@ it('removes dinosaur by type', function(){
 
 })
 
+it('returns a list of dinosaurs with more than two offspring', function(){
+  park.addDinoToEnclosure(dinosaur1);
+  park.addDinoToEnclosure(dinosaur1);
+  park.addDinoToEnclosure(dinosaur3);
+  park.addDinoToEnclosure(dinosaur3);
+  park.findDinosWithMoreThanTwoBabies();
+  assert.strictEqual(park.countWithMoreThan2Babies, 2);
+
+})
 
 });

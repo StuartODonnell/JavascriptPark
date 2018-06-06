@@ -17,4 +17,14 @@ Park.prototype.removeDinoByName = function(type){
   }
 }
 
+Park.prototype.findDinosWithMoreThanTwoBabies = function(){
+  var counter = 0;
+  for (i = 0; i < this.enclosure.length; i++){
+    if(this.enclosure[i].numberOfOffspring >= 2){
+    counter += 1;
+  }
+  return counter;
+  }
+}
+
 module.exports = Park;
