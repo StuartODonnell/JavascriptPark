@@ -9,17 +9,25 @@ Park.prototype.addDinoToEnclosure = function(dinosaur){
 }
 
 Park.prototype.removeDinoByName = function(type){
+// for (let i = this.enclosure.length -1; i>+0; i--){
+//   if(this.enclosure[i].type ===){
+//     this.enclosure.splice(i,1);
+//   }
+// }
+
   for (let i = 0; i < this.enclosure.length; i++){
       if(this.enclosure[i].type === type) {
-          this.enclosure.splice(i, 1);
+          this.enclosure.splice(i, 1); //splices at that index point for a length of 1 space
           i--;
       }
   }
-}
+};
+
+// i-- reverses the loop direction
 
 Park.prototype.findDinosWithMoreThanTwoBabies = function(){
   var counter = 0;
-  for (i = 0; i < this.enclosure.length; i++){
+  for (let i = 0; i < this.enclosure.length; i++){
     if(this.enclosure[i].numberOfOffspring >= 2){
     counter += 1;
   }
