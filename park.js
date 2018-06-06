@@ -2,7 +2,8 @@ const Park = function(){
   this.enclosure = [];
 };
 
-Park.prototype.addDinoToEnclosure = function(){
-  this.enclosure.length;
+Park.prototype.addDinoToEnclosure = function(dinosaur){
+  this.enclosure.push(dinosaur);
 }
+
 module.exports = Park;
